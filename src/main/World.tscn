@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cursvvvjspala"]
+
+[node name="World" type="Node" unique_id=1418656006]
+
+[node name="System" type="Node" parent="." unique_id=723449802]
+
+[node name="RoomRoot" type="Node2D" parent="." unique_id=170724365]
+
+[node name="RoomFloor" type="TileMapLayer" parent="RoomRoot" unique_id=1325197052]
+
+[node name="RoomWall" type="TileMapLayer" parent="RoomRoot" unique_id=1203333840]
+
+[node name="RoomObject" type="TileMapLayer" parent="RoomRoot" unique_id=1599065820]
+
+[node name="PlayerRoot" type="Node2D" parent="." unique_id=1213687413]
+
+[node name="PlayerScene" type="Node2D" parent="PlayerRoot" unique_id=193053188]
