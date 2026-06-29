@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://hdbss2ykoder"]
+
+[ext_resource type="Texture2D" uid="uid://dvd0884q4f33h" path="res://assets/testRoom/testRoom_tileset.png" id="1_ekdea"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vxd5k"]
+texture = ExtResource("1_ekdea")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_xu0qm"]
+sources/1 = SubResource("TileSetAtlasSource_vxd5k")
+
+[node name="Node2D" type="Node2D" unique_id=1826475253]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=550676852]
+tile_set = SubResource("TileSet_xu0qm")
