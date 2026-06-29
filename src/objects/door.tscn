@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b2ksdrti1colg"]
+
+[ext_resource type="Texture2D" uid="uid://vreuo1thq0w1" path="res://assets/testRoom/testRoom_door.png" id="1_u1vyq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lktn5"]
+size = Vector2(30, 16)
+
+[node name="Sprite2D" type="Sprite2D" unique_id=1772260298]
+position = Vector2(16, -17)
+texture = ExtResource("1_u1vyq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1827999451]
+position = Vector2(0, 23)
+shape = SubResource("RectangleShape2D_lktn5")

@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://4mdx54tdqv86" path="res://assets/player/MCSprite_up.png" id="4_o822w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xu0qm"]
-size = Vector2(16, 16)
+size = Vector2(16, 11)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cwolq"]
 atlas = ExtResource("2_5f2sf")
@@ -196,7 +196,7 @@ animations = [{
 script = ExtResource("1_244u8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=590549402]
-position = Vector2(0, 8)
+position = Vector2(0, 10.5)
 shape = SubResource("RectangleShape2D_xu0qm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=61002348]

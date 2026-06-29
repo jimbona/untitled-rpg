@@ -1,16 +1,32 @@
 [gd_scene format=3 uid="uid://cursvvvjspala"]
 
+[ext_resource type="Script" uid="uid://vu3bbiuooft0" path="res://src/main/room_root.gd" id="1_7imkn"]
+[ext_resource type="Texture2D" uid="uid://vreuo1thq0w1" path="res://assets/testRoom/testRoom_door.png" id="2_dv83b"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_601ev"]
+texture = ExtResource("2_dv83b")
+texture_region_size = Vector2i(32, 34)
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_xu0qm"]
+sources/0 = SubResource("TileSetAtlasSource_601ev")
+
 [node name="World" type="Node" unique_id=1418656006]
 
 [node name="System" type="Node" parent="." unique_id=723449802]
 
 [node name="RoomRoot" type="Node2D" parent="." unique_id=170724365]
+script = ExtResource("1_7imkn")
 
 [node name="RoomFloor" type="TileMapLayer" parent="RoomRoot" unique_id=1325197052]
 
 [node name="RoomWall" type="TileMapLayer" parent="RoomRoot" unique_id=1203333840]
 
 [node name="RoomObject" type="TileMapLayer" parent="RoomRoot" unique_id=1599065820]
+tile_set = SubResource("TileSet_xu0qm")
 
 [node name="PlayerRoot" type="Node2D" parent="." unique_id=1213687413]
 
